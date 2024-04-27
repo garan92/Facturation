@@ -7,6 +7,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@RestController
+@RequestMapping("/client")
+@AllArgsConstructor
 public class ClientController {
 }

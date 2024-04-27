@@ -1,25 +1,20 @@
 package com.example.demo.controller;
 
-
 import com.example.demo.modele.Produit;
 import com.example.demo.service.ProduitService;
 import lombok.AllArgsConstructor;
-
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
 @RequestMapping("/produit")
 @AllArgsConstructor
-// @EnableGlobalAuthentication
 public class ProduitController {
-    // private final ProduitService produitService;
+    private final ProduitService produitService;
     @GetMapping("/status")
-    public String status(){
+    public String status() {
         return "Hello";
     }
-    /*
     @PostMapping("/create")
     public Produit create(@RequestBody Produit produit){
         return produitService.creer(produit);
@@ -35,7 +30,5 @@ public class ProduitController {
     @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable Long id){
         return produitService.supprimer(id);
-    }*/
-
-
+    }
 }
